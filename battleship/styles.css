@@ -1,0 +1,65 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(164, 192, 164);
+}
+
+h1{
+  margin: 4%;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  background-color: inherit;
+  border: solid;
+  margin-top: 40%;
+  border-radius: 10px;
+  padding: 5px 8px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  border: solid;
+}
+
+.square{
+  color: white;
+  margin: 1%;
+  background-color: rgb(56, 53, 53);
+  width: 60px;
+  height: 60px;
+}
+
+.game{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.player{
+  padding: 4%;
+  background-color: rgba(45, 30, 177, 0.21);
+}
+
+.player_information{
+  margin: 10% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
