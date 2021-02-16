@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #c5ab6a;
 }
 /* Link Styles */
 
@@ -26,6 +26,11 @@ h3{
  color: blue;
   
 }
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 
 /* Section Styles */
 
