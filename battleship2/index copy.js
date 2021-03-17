@@ -25,80 +25,8 @@ var players = {
   },
 };
 
-
-// players[1].name = myFunction();
-// players[2].name = myFunction2();
-
-// players[2].name = prompt("player 2 what is your name? ");
-
-// function getName() {
-
-  // document.getElementById("demo2").innerHTML = "Player 1";
-
-// };
-
-
-// document.getElementById("demo2").innerHTML = "Player 1";
-
-
-
-// function secondFunction( hello ) {
-//   players[2].name = document.getElementById("myText").value;
-//   document.getElementById("name_player1").innerHTML = players[2].name;
-//   document.getElementById('myText').value = "";
-// };
-
-// function firstFunction( callback) {
-//   players[1].name = document.getElementById("myText").value;
-//   document.getElementById("name_player1").innerHTML = players[1].name;
-//   document.getElementById('myText').value = "";
-
-//   document.getElementById("demo2").innerHTML = "Player 2";
-
-//  callback(hello);
-// };
-// myFunction(secondFunction);
-
-
-function myFunction(){
-
-    players[1].name = document.getElementById("myText").value;
-    document.getElementById("name_player1").innerHTML = players[1].name;
-    document.getElementById('myText').value = "";
-
-    // document.getElementById("demo2").innerHTML = "Player 2";
-
-}
-
-function myFunction2(){
-
-  players[2].name = document.getElementById("myText2").value;
-  document.getElementById("name_player2").innerHTML = players[2].name;
-  document.getElementById('myText2').value = "";
-
-  // document.getElementById("demo2").innerHTML = "Player 2";
-
-}
-
-// function myFunction(){
-
-//     players[1].name = document.getElementById("myText").value;
-//     document.getElementById("name_player1").innerHTML = players[1].name;
-//     document.getElementById('myText').value = "";
-
-//     document.getElementById("demo2").innerHTML = "Player 2";
-
-//   // players[2].name = document.getElementById("myText").value;
-//   // document.getElementById("name_player1").innerHTML = players[2].name;
-// }
-
-
-// function myFunction2(){
-//   var x = document.getElementById("myText").value;
-//   document.getElementById("name_player1").innerHTML = x;
-// }
-
-
+players[1].name = prompt("player 1 what is your name? ");
+players[2].name = prompt("player 2 what is your name? ");
 
 // player names
 const player1_name = document.getElementById("name_player1");
@@ -109,13 +37,9 @@ player2_name.textContent = players[2].name;
 
 // whose turn
 function updateTurnPlayer(){
-  // so I want it to be empty at the start
-
   const turn_player = document.getElementById("turn_player");
-  turn_player.textContent = players[currentPlayer].name + ", it's your turn!"; 
+  turn_player.textContent = players[currentPlayer].name;  
 
- // when both players enter their names, it logs on aaa, it's your turn
- // at the end when someone wins then it stops logging on turn. 
 }
 
 // number of ships
@@ -127,7 +51,6 @@ function updateNumships( ){
   ships_player2.textContent = players[2].numShips;    
 
 }
-
 
 
 // this is the board
@@ -167,18 +90,13 @@ function playerBoard(playerNumber) {
           return;
         }
 
-
         if (cell.value === 0) {
           cell.style.background = "green";
-          // alert(players[currentPlayer].name + " you miss!");
-          document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you miss!";
-
+          alert(players[currentPlayer].name + " you miss!");
 
         } else if (cell.value === 1) {
           cell.style.background = "blue";
-          // alert(players[currentPlayer].name + " you hit!");
-          document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you hit!";
-
+          alert(players[currentPlayer].name + " you hit!");
           players[currentPlayer].numShips--;
           updateNumships();
         }
@@ -186,12 +104,9 @@ function playerBoard(playerNumber) {
         // when all guesses have been made
         if (players[currentPlayer].numShips === 0) {
           haveWinner = true;
-          // alert(players[currentPlayer].name + " you win! ");
-
-          document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you win!";
-
+          alert(players[currentPlayer].name + " you win! ");
         }
-        
+
         if (currentPlayer === 1) {
           currentPlayer = 2;
         } else {
@@ -199,8 +114,6 @@ function playerBoard(playerNumber) {
         }
 
         updateTurnPlayer();
-        // when this is turned off, it's your turn is still present at beginning. 
-        // it also is there throughout game, but doesn't update player name. 
         
       });
 
@@ -234,7 +147,6 @@ playerBoard(1);
 playerBoard(2);
 
 updateNumships();
-// updateTurnPlayer();
+updateTurnPlayer();
 
-// when this is turned off, nothing there at start, but then it works fine throughout game. Except at end where winner is wrong.  
 

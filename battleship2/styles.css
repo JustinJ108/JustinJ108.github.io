@@ -9,10 +9,6 @@ body {
   background: #c5ab6a;
 }
 
-div.a{
-  margin: 50px;
-}
-
 h1{
   margin: 4%;
 }
@@ -28,7 +24,7 @@ li{
   flex-direction: row;
 }
 
-/* button{
+button{
   background-color: inherit;
   border: solid;
   margin-top: 40%;
@@ -40,7 +36,7 @@ button:hover{
   background-color: black;
   color: white;
   border: solid;
-} */
+}
 
 .square{
   color: white;
