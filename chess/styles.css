@@ -1,0 +1,42 @@
+body {
+  background: #cc9900; /* Background color of the body */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the start vertically */
+  height: 100vh; /* Make body full height */
+  margin: 0; /* Remove default body margin */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  background: white;
+  margin: 100px auto; /* Center the board and add 50px top margin */
+  padding: 0; /* Remove any default padding */
+  border: 1px solid black; /* Optional: Add border around the board */
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piece {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.piece-A {
+  background-color: #ff5733; /* Orange color for Player A */
+}
+
+.piece-B {
+  background-color: #3498db; /* Blue color for Player B */
+}

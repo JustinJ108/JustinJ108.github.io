@@ -1,43 +1,53 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #222;
-  background: #c5ab6a;
+  background: #cc9900;
 }
 /* Link Styles */
 
 a {
   text-decoration: none;
-  color: #0499ff;
+  color: #ffffcc;
 }
 a:hover {
-  color: #6633ff;
+  color: #cc9900;
 }
 
+h3 {
+  color: blue;
+}
 
-h3{
- color: blue;
-  
+.button {
+  background-color: #663300; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px;
 }
 
 .button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
-  min-height: 30px;
+  background: #663300;
+  min-height: 75px;
   padding: 10px;
   position: fixed;
   text-align: center;
@@ -57,15 +67,15 @@ h3{
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  transition: all 0.5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url("images/portland.jpg") no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -85,26 +95,26 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 } */
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #ffffcc;
+  color: #663300;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: #663300;
+  color: #ffffcc;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
+  background: #ffffcc;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  border: 1px black;
+  border: 3px black;
 }
 .card:hover {
   border-color: #ff99ff;
@@ -137,7 +147,7 @@ footer {
 footer .copyright {
   top: -8px;
   margin-right: 20px;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 footer ul {
@@ -157,8 +167,8 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .5;
-  transition: all .25s;
+  opacity: 0.5;
+  transition: all 0.25s;
 }
 a.twitter {
   background-image: url(images/twitter.svg);
@@ -178,12 +188,11 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
   .flex {
-      display: flex;
-      max-width: 1200px;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 
   header {
@@ -213,6 +222,4 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
-
 }
-

@@ -4,76 +4,67 @@
   <meta charset="utf-8">
   <title>Justin Read's Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-  <body>
+  <link rel="stylesheet" href="base.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+</head>
+<body>
 
-    <div class="main-nav">
-        <ul class="nav">
-          <li class="name">Justin Read</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="images/resume-tech.pdf">Resume</a></li>
-          <li><a href="battleship/index.html">Projects</a></li>
-        </ul>
+  <div id="navbar"></div>  <!-- Placeholder for the navigation bar -->
+
+  <header>
+    <img src="images/ggb.jpg" width="400" height="250" style="margin: 50px;" alt="Golden Gate Bridge">
+    <h1 class="tag name">Welcome to the Portfolio page of Justin Read</h1>
+    <p></p>
+    <p class="tag location">Based in San Francisco, California</p>
+  </header>
+
+  <div class="centered-table">
+    <table>
+      <tr>
+        <td><a href="/images/resume-tech.pdf" class="button">Resume</a></td>
+        <td><a href="https://www.linkedin.com/in/readjustin/" class="button">LinkedIn</a></td>
+        <td><a href="https://github.com/JustinJ108" class="button">Github</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- <main class="flex">
+    <div class="card">
+      <!-- <h2>Projects</h2> -->
+      <!-- <p>Welcome to my portfolio website. I have tried to show here some of the programming skills I have learned.</p> -->
+      <!-- <p>The first website I have created is a <a href="battleship/index.html">Battleship</a> game for two players, using HTML, CSS, and JavaScript.</p> -->
+      
+      <!-- <a href="battleship/index.html"><img src="images/battle.png" width="350" height="275" alt="Battleship project"></a> -->
     </div>
 
-    <header>
-      <!-- <img src="images/profile.png" alt="" class="profile-image"> -->
-      <td><img src="images/ggb.jpg" width=400px height=250px> </td>
+    <!-- <div class="card">
+      <h2>Goals</h2>
+      <p>I want to master the process of building websites and increase my knowledge, skills, and abilities in:</p>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Ruby</li>
+        <li>Rails</li>
+      </ul>
+      <h3>A new subsection</h3>
+      <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+    </div> -->
+
+  </main> 
+
+  <footer>
+    <p>&copy; 2024 Justin Read. All rights reserved.</p>
+    <div>
+      <a href="https://twitter.com/JustinJ108" class="social" aria-label="Twitter"></a>
+      <a href="https://github.com/JustinJ108" class="social" aria-label="Github"></a>
+      <a href="https://linkedin.com/in/readjustin" class="social" aria-label="LinkedIn"></a>
+    </div>
+  </footer>
 
 
 
-      <h1 class="tag name">Welcome to the Resume page of Justin Read</h1>
-      <p class="tag location">Based in San Francisco, California</p>
-    </header>
+  <script src="nav.js"></script>
 
-    
-    <center> 
-    <table width =50%>
-      <tbody>
-      <tr>
-      <td><a href="/images/resume-tech.pdf"     ><img src="images/resume.png" width=142px height=54px class="button2"></a> </td>
-      <td><a href="https://www.linkedin.com/in/readjustin/"><img src="images/Linkedin.png" width=142px height=54px class="button2"></a> </td>
-      <td><a href="https://github.com/JustinJ108"> <img src="images/github.png" width=142px height=54px class="button2"> </a> </td>
-      </tr>
-      </tbody>
-      </table>
-    </center>
-
-
-    <main class="flex">
-      <div class="card">
-        <h2>Projects</h2>
-        <p> Welcome to my website. I have tried to show here some of the programming skills I have learned. </p>
-        <p> The first website I have created is a <a href="battleship/index.html">Battleship</a> game for two players. I have created this using HTML, CSS and javascript</p>
-
-        <a href="battleship/index.html"     ><img src="images/battle.png" width=350px height=275px class="button2"></a> 
-
-
-
-        <!-- <p> The second website is a database i have made using Ruby on Rails</p>
-        <ul>
-          <li>To learn more, <a href="resume.html">view my resume.</a></li>
-        </ul> -->
-      </div> 
-
-      <div class="card">
-        <h2>Goals</h2>
-        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Ruby</li>
-          <li>Rails</li>
-        </ul>
-        
-        <h3>A new subsection</h3>
-        
-        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-      </div> 
-
-    </main>
-
-  </body>
-  </html>
+</body>
+</html>

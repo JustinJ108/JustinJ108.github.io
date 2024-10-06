@@ -168,29 +168,32 @@ function playerBoard(playerNumber) {
         }
 
 
-        if (cell.value === 0) {
-          cell.style.background = "green";
-          // alert(players[currentPlayer].name + " you miss!");
-          document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you miss!";
+          if (cell.value === 0) {
+            cell.style.background = "green";
+            // alert(players[currentPlayer].name + " you miss!");
+            document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you miss!";
+  
+  
+          } else if (cell.value === 1) {
+            cell.style.background = "blue";
+            // alert(players[currentPlayer].name + " you hit!");
+            document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you hit!";
+  
+            players[currentPlayer].numShips--;
+            updateNumships();
+          }
+  
+          // when all guesses have been made
+          if (players[currentPlayer].numShips === 0) {
+            haveWinner = true;
+            // alert(players[currentPlayer].name + " you win! ");
+  
+            document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you win!";
+  
+          }
 
 
-        } else if (cell.value === 1) {
-          cell.style.background = "blue";
-          // alert(players[currentPlayer].name + " you hit!");
-          document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you hit!";
-
-          players[currentPlayer].numShips--;
-          updateNumships();
-        }
-
-        // when all guesses have been made
-        if (players[currentPlayer].numShips === 0) {
-          haveWinner = true;
-          // alert(players[currentPlayer].name + " you win! ");
-
-          document.getElementById("demo3").innerHTML = players[currentPlayer].name + ", you win!";
-
-        }
+        
         
         if (currentPlayer === 1) {
           currentPlayer = 2;

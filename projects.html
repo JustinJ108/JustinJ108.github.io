@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Justin Read's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+
+
+  <div id="navbar"></div>  <!-- Placeholder for the navigation bar -->
+
+
+</head>
+  <body>
+
+    <p></p>
+    <p></p>
+
+
+    <main class="flex">
+
+    <table>
+
+      <tbody>
+      <tr>
+      <td>
+        <div class="card2">
+
+          <h2>Battleship Game</h2>
+          <p>This game is written in javascript</p>
+          <p></p>
+
+          <a href="battleship/index.html"     ><img src="images/battle.png" width=350px height=275px class="button2"></a> 
+  
+          <!-- <p> The second website is a database i have made using Ruby on Rails</p>
+          <ul>
+            <li>To learn more, <a href="resume.html">view my resume.</a></li>
+          </ul> -->
+        </div> 
+  
+
+      </td>
+      </tr>
+      <tr>
+      <td>
+
+        <div class="card2">
+          <h2>Weather API</h2>
+
+          <p>This is written in javascript using an api</p>
+       
+          <a href="weather/index.html"     ><img src="images/weather.png" width=300px height=375px class="button2"></a> 
+  
+        </div> 
+  
+
+      </td>
+      </tr>
+      <tr>
+      <td>
+
+        <div class="card2">
+          <h2>Chess</h2>
+
+          <p>This game was written in javascript using prompts with an AI program.</p>
+        
+          <a href="chess/trivia8.html"     ><img src="images/chess.png" width=275px height=275px class="button2"></a> 
+  
+        </div> 
+
+      </td>
+      </tr>
+      </tbody>
+
+      </table>
+
+    </main>
+
+
+      
+
+     
+
+      
+
+
+    <script>
+      console.log("Fetching /nav.html");
+    fetch('nav.html')
+    .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text();
+     })
+    .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+    })
+    .catch(error => {
+    console.error('There has been a problem with your fetch operation:', error);
+    });
+    </script>
+
+
+  </body>
+  </html>

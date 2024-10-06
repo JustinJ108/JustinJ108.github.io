@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <link rel="stylesheet" href="../base.css" type="text/css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div class="container">
+        <!-- Search section -->
+        <div class="search-section">
+            <div class="input-wrapper">
+                <span class="material-symbols-rounded">Search</span>
+                <input type="search" placeholder="Enter a city name" class="search-input">
+            </div>
+            <!-- <button class="location-button">
+                <span class="material-symbols-rounded">my_location</span>
+            </button> -->
+        </div>
+
+        <!-- Weather section -->
+        <div class="weather-section">
+            <div class="current-weather">
+                <img src="icons/clouds.svg" class="weather-icon">   
+                <h2 class="temperature">00<span>°C</span></h2>  
+                <p class="description">Weather description</p>
+            </div>
+
+            <!-- Hourly weather forecast list -->
+            <div class="hourly-weather">
+                <ul class="weather-list">
+                    <!-- <li class="weather-item">
+                        <p class="time">00:00</p>
+                        <img src="icons/clouds.svg" class="weather-icon">  
+                        <p class="temperature">20</p> 
+                    </li>
+                    <li class="weather-item">
+                        <p class="time">00:00</p>
+                        <img src="icons/clouds.svg" class="weather-icon">  
+                        <p class="temperature">20</p> 
+                    </li> <li class="weather-item">
+                        <p class="time">00:00</p>
+                        <img src="icons/clouds.svg" class="weather-icon">  
+                        <p class="temperature">20</p> 
+                    </li> <li class="weather-item">
+                        <p class="time">00:00</p>
+                        <img src="icons/clouds.svg" class="weather-icon">  
+                        <p class="temperature">20</p> 
+                    </li> <li class="weather-item">
+                        <p class="time">00:00</p>
+                        <img src="icons/clouds.svg" class="weather-icon">  
+                        <p class="temperature">20</p> 
+                    </li> <li class="weather-item">
+                        <p class="time">00:00</p>
+                        <img src="icons/clouds.svg" class="weather-icon">  
+                        <p class="temperature">20</p> 
+                    </li> -->
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <main class="flex">
+        <div class="card">
+          <h2>Weather App</h2>
+          <p>This project is built in javascript using an API</p>
+                  
+        </div>
+    
+    </main>
+    
+    <script src="../nav.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
