@@ -45,7 +45,7 @@ hourlyWeatherDiv.innerHTML = next24HoursData.map(item => {
 }
 
 const getWeatherDetails = async (cityName) => {
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=2`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=2`;
 
 try {
   // fetch weather data from api and parse response as JSON
