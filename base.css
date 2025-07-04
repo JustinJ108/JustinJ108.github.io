@@ -15,11 +15,11 @@ body {
 /* Link Styles */
 a {
   text-decoration: none;
-  color: #ffffcc;
+  color: #c49b16;
   transition: color 0.5s;
 }
 a:hover {
-  color: #cc9900;
+  color: #523f05;
 }
 
 /* h3 {
@@ -30,7 +30,7 @@ a:hover {
 .button {
   background-color: #663300;
   border: none;
-  color: ffffcc;
+  color: #ba8f21;
   padding: 20px;
   font-size: 20px;
   margin: 20px;
