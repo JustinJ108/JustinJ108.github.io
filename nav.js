@@ -1,5 +1,5 @@
 console.log("Fetching /nav.html");
-fetch('../nav.html')
+fetch('nav.html')
 .then(response => {
 if (!response.ok) {
   throw new Error('Network response was not ok');
